@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+    :root {
+        --radius: 0.5rem; /* Border radius for rounded corners */
+
+        /* Background and foreground colors */
+        --background: 200 100% 97%; /* Light pastel blue */
+        --foreground: 220 85% 15%; /* Dark navy blue for strong contrast */
+
+        /* Card and Popover colors */
+        --card: 200 100% 95%; /* Slightly off-white */
+        --card-foreground: 220 85% 15%; /* Dark navy for readability */
+        --popover: 200 100% 95%; /* Matching card */
+        --popover-foreground: 220 85% 15%; /* Consistent text color */
+
+        /* Primary color: Soft Blue */
+        --primary: 240 80% 55%; /* Medium blue for good contrast */
+        --primary-foreground: 0 0% 98%; /* Near-white text */
+
+        /* Secondary color: Pastel Purple */
+        --secondary: 270 80% 65%; /* Soft lavender with good contrast */
+        --secondary-foreground: 0 0% 98%; /* Near-white text */
+
+        /* Muted color: Soft Gray-Blue */
+        --muted: 210 40% 85%; /* Light gray-blue */
+        --muted-foreground: 220 50% 30%; /* Muted dark blue */
+
+        /* Accent color: Soft Purple */
+        --accent: 270 80% 65%; /* Matching secondary */
+        --accent-foreground: 0 0% 98%; /* Near-white text */
+
+        /* Destructive color: Soft Red */
+        --destructive: 0 72% 50%; /* Muted red for less harsh contrast */
+        --destructive-foreground: 0 0% 98%; /* Near-white text */
+
+        /* Border and Input colors */
+        --border: 210 50% 80%; /* Softer blue-gray for borders */
+        --input: 210 50% 82%; /* Slightly darker for better contrast */
+
+        /* Ring color */
+        --ring: 240 80% 55%; /* Matching primary color */
+
+        /* Chart colors */
+        --chart-1: 240 80% 55%; /* Primary */
+        --chart-2: 270 80% 65%; /* Secondary */
+        --chart-3: 210 40% 85%; /* Muted */
+        --chart-4: 200 100% 95%; /* Background */
+        --chart-5: 0 72% 50%; /* Destructive */
+    }
+
+    .dark {
+        /* Background and foreground colors */
+        --background: 220 50% 10%; /* Dark navy blue */
+        --foreground: 220 100% 95%; /* Light pastel blue for contrast */
+
+        /* Card and Popover colors */
+        --card: 220 50% 15%; /* Darker gray-blue */
+        --card-foreground: 220 100% 95%; /* Light pastel blue */
+        --popover: 220 50% 15%;
+        --popover-foreground: 220 100% 95%;
+
+        /* Primary color */
+        --primary: 240 80% 65%; /* Bright blue for dark mode */
+        --primary-foreground: 0 0% 98%; /* Near-white text */
+
+        /* Secondary color */
+        --secondary: 270 70% 75%; /* Brighter pastel purple */
+        --secondary-foreground: 0 0% 98%; /* Near-white text */
+
+        /* Muted color */
+        --muted: 220 20% 30%; /* Dark muted blue */
+        --muted-foreground: 220 50% 80%; /* Light muted blue */
+
+        /* Accent color */
+        --accent: 270 70% 75%; /* Soft purple */
+        --accent-foreground: 0 0% 98%; /* Near-white text */
+
+        /* Destructive color */
+        --destructive: 0 72% 50%; /* Same as light mode */
+        --destructive-foreground: 0 0% 98%; /* Near-white text */
+
+        /* Border and Input colors */
+        --border: 220 30% 25%; /* Dark gray for borders */
+        --input: 220 30% 30%; /* Slightly lighter gray */
+
+        /* Ring color */
+        --ring: 240 80% 65%; /* Matching primary color */
+
+        /* Chart colors */
+        --chart-1: 240 80% 65%; /* Primary */
+        --chart-2: 270 70% 75%; /* Secondary */
+        --chart-3: 220 20% 30%; /* Muted */
+        --chart-4: 220 50% 15%; /* Background */
+        --chart-5: 0 72% 50%; /* Destructive */
+    }
+}
