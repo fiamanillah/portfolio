@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'next-themes';
 import '@/app/globals.css';
 import { Oxanium } from 'next/font/google';
+import Header from '@/components/header/Header';
 
 const oxanium = Oxanium({
     subsets: ['latin'],
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
             <body
-                className={`antialiased bg-background text-foreground ${oxanium.variable} font-oxanium`}
+                className={`antialiased  ${oxanium.variable} font-oxanium bg-background prose max-w-none`}
             >
                 <ThemeProvider
                     attribute="class"
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
                     enableSystem
                     disableTransitionOnChange
                 >
+                    <Header />
                     {children}
                 </ThemeProvider>
             </body>
