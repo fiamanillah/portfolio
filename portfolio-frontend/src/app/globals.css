@@ -30,6 +30,7 @@
 html {
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--muted)) hsl(var(--background));
+    scroll-behavior: smooth;
 }
 
 @layer base {
@@ -83,7 +84,7 @@ html {
         --disabled-foreground: 0 0% 40%;
 
         /* Borders & Inputs */
-        --border: 36 24% 65%; /* Slightly darker for better visibility */
+        --border: 36 24% 70%; /* Slightly darker for better visibility */
         --border-strong: 36 24% 45%; /* Stronger border color */
         --border-solid: 0 0% 15%; /* More defined border */
         --input: 36 29% 86%;

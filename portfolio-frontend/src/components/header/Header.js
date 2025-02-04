@@ -2,6 +2,19 @@ import Link from 'next/link';
 import Section from '../global/Section';
 import { ModeToggle } from '../theme/theme-toggle';
 import { Button } from '../ui/button';
+import logo from '@/assets/images/logo.svg';
+import Image from 'next/image';
+import NavMenu from './NavMenu';
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from '@/components/ui/sheet';
+import { MenuIcon } from 'lucide-react';
+
 const Header = () => {
     return (
         <Section
@@ -10,19 +23,47 @@ const Header = () => {
             }
         >
             <div className="flex justify-between items-center ">
-                <h1 className="flex justify-center items-center ">
+                <h1 className="basis-1/6 flex justify-center items-center ">
                     <Link
                         href="/"
-                        className="text-primary text-3xl font-bold hover:text-primary no-underline text-nowrap select-none"
+                        className="text-primary text-2xl font-bold hover:text-primary no-underline text-nowrap select-none flex items-center gap-2 h-10 mobile-sm:h-8"
                     >
+                        <Image
+                            src={logo}
+                            alt="Fi Amanillah"
+                            className="h-full max-w-10 -translate-y-1"
+                        />
                         Fi Amanillah
                     </Link>
                 </h1>
-                <div className="flex items-center gap-2">
-                    <Button className="font-bold" size="">
-                        Resume
-                    </Button>
+                <div className="tablet-lg:hidden basis-4/6 flex justify-center">
+                    <NavMenu />
+                </div>
+                <div className=" basis-1/6 flex items-center gap-2">
+                    <Link
+                        href={
+                            'https://drive.google.com/file/d/1nIK9SN-77GZAqTJoYORz8YPgsqxuUl7G/view?usp=drive_link'
+                        }
+                        target="blank"
+                    >
+                        <Button className="font-bold" size="">
+                            Resume
+                        </Button>
+                    </Link>
                     <ModeToggle />
+                    <div className="hidden tablet-lg:block">
+                        <Sheet>
+                            <SheetTrigger asChild>
+                                <Button variant="outline" className="w-10 h-10 rounded-full">
+                                    <MenuIcon />
+                                </Button>
+                            </SheetTrigger>
+                            <SheetContent>
+                                <SheetTitle>Menu</SheetTitle>
+                                <NavMenu />
+                            </SheetContent>
+                        </Sheet>
+                    </div>
                 </div>
             </div>
         </Section>

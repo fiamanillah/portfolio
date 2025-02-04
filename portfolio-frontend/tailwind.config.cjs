@@ -120,7 +120,7 @@ module.exports = {
 
                         h1: {
                             color: 'hsl(var(--foreground))',
-                            fontSize: '2.5rem',
+                            fontSize: '3.5rem',
                             fontWeight: '600',
                             marginBottom: '1rem',
                         },
@@ -140,13 +140,11 @@ module.exports = {
                             color: 'hsl(var(--foreground))',
                             fontSize: '1.5rem',
                             fontWeight: '600',
-                            marginBottom: '1rem',
                         },
                         h5: {
                             color: 'hsl(var(--foreground))',
                             fontSize: '1.25rem',
                             fontWeight: '600',
-                            marginBottom: '1rem',
                         },
                         h6: {
                             color: 'hsl(var(--foreground))',

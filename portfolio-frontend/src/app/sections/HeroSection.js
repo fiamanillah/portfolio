@@ -15,6 +15,8 @@ import dots2 from '@/assets/elements/dots2.svg';
 import dots3 from '@/assets/elements/dots3.svg';
 import RandomMovingDiv from '@/components/client/RandomMovingDiv';
 import TextReveal from '@/components/global/TextReveal';
+import SocialIcons from '@/components/hero/SocialIcons';
+import Link from 'next/link';
 
 const HeroSection = () => {
     return (
@@ -112,21 +114,26 @@ const HeroSection = () => {
                         </TextReveal>
 
                         <div className="my-3">
-                            <Button size="lg">Hire Me</Button>
-                            <Button variant="outline" size="lg" className="ml-2">
-                                View My Work
-                            </Button>
+                            <Link href={'#contact'}>
+                                <Button size="lg">Hire Me</Button>
+                            </Link>
+                            <a href={'#projects'}>
+                                <Button variant="outline" size="lg" className="ml-2">
+                                    View My Work
+                                </Button>
+                            </a>
                         </div>
                     </div>
 
                     {/* Right Content - Hero Image */}
-                    <div className="basis-1/2 flex justify-end items-end z-20 mobile-lg:mt-10">
+                    <div className="basis-1/2 flex justify-end items-end z-20 mobile-lg:mt-10 relative">
+                        <SocialIcons />
                         <div>
                             <motion.div
                                 initial={{ rotateX: 90, y: 10, opacity: 0 }}
                                 animate={{ rotateX: 0, y: 0, opacity: 1 }}
                                 transition={{
-                                    duration: 1,
+                                    duration: 2,
                                     ease: 'easeOut',
                                     type: 'spring',
                                     stiffness: 120,
@@ -164,7 +171,7 @@ const HeroSection = () => {
                             <motion.div
                                 animate={{ x: [0, '5px', 0] }}
                                 transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-                                className="absolute top-[50%] left-[55%] tablet-lg:top-1/2 tablet-lg:left-[15%] mobile-lg:top-[60%]  mobile-lg:left-[5%] w-20 tablet-lg:w-32 mobile-lg:w-20 opacity-65 dark:opacity-100 dark:brightness-[3] mobile-sm:top-[65%]"
+                                className="absolute top-[50%] left-[15%] tablet-lg:top-1/2 tablet-lg:left-[10%] mobile-lg:top-[45%]  mobile-lg:left-[5%] w-20 tablet-lg:w-32 mobile-lg:w-24 opacity-65 dark:opacity-100 dark:brightness-[3] mobile-sm:top-[65%]"
                             >
                                 <Image src={dottedArrow} alt="dottedArrow" />
                             </motion.div>
