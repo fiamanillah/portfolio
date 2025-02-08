@@ -5,8 +5,10 @@ const FooterSection = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <Section>
-            <p>Made by FiAmanillah @ All rights reserved | {currentYear}</p>
+        <Section className={'border-t border-border'}>
+            <div className="text-center">
+                <p>Made by FiAmanillah @ All rights reserved | {currentYear}</p>
+            </div>
         </Section>
     );
 };

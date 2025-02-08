@@ -78,8 +78,10 @@ const ProjectSection = () => {
                 <div className="flex flex-col justify-center text-center py-10 w-2/3 mx-auto mobile-lg:w-full z-10">
                     <h1>Projects</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut odit quisquam
-                        cumque quos ratione dignissimos veniam molestias facere quas autem?
+                        Explore a collection of my projects that showcase my skills in web
+                        development, problem-solving, and creating user-friendly applications. Each
+                        project is built with modern technologies and designed to deliver a seamless
+                        user experience.
                     </p>
                 </div>
 

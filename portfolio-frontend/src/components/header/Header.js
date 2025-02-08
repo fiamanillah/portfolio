@@ -39,7 +39,7 @@ const Header = () => {
                 <div className="tablet-lg:hidden basis-4/6 flex justify-center">
                     <NavMenu />
                 </div>
-                <div className=" basis-1/6 flex items-center gap-2">
+                <div className=" basis-1/6 flex items-center justify-end gap-2">
                     <Link
                         href={
                             'https://drive.google.com/file/d/1nIK9SN-77GZAqTJoYORz8YPgsqxuUl7G/view?usp=drive_link'

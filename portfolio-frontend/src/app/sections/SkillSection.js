@@ -6,16 +6,18 @@ export default function SkillSection() {
     return (
         <Section className={'relative py-10'}>
             {/* <SectionBackgrpound1 /> */}
-            <div className="text-center">
-                <h1>What I know</h1>
+            <div className="text-center w-4/6 mx-auto tablet-lg:w-full">
+                <h1>What I Know</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ullam
-                    perferendis totam quia fugit? Dolore culpa sit amet corrupti non?
+                    I specialize in building modern, scalable, and user-friendly web applications.
+                    My expertise spans across frontend and backend development, with a strong focus
+                    on technologies like React, Node.js, and MongoDB. I am passionate about solving
+                    complex problems and delivering high-quality solutions.
                 </p>
             </div>
             <div className="flex">
                 <div className="w-20 my-auto">
-                    <h1 className="rotate-[-90deg] ">Skills</h1>
+                    <h1 className="rotate-[-90deg]">Skills</h1>
                 </div>
                 <div>
                     <Skills />
